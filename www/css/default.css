@@ -1,0 +1,48 @@
+body {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+table {
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    border-spacing: 0px; 
+}
+table td {
+    margin: 0px;
+    padding: 0px;
+}
+#deskID {
+/*    border: 1px solid black;*/
+    position: absolute;
+    float: left;
+}
+#deskWidth {
+    margin-left: 2px;
+}
+#deskID .cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+}
+#deskID .selectedCell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    background-color: green;
+}
+#deskID .forage {
+	width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    background-color: blue;
+}
+#commandPanel {
+    background-color: white;
+    position: absolute;
+    border: 1px black solid;
+    float: left;
+    padding: 5px;
+}

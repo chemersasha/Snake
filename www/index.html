@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Snake</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>        
+        <script type="text/javascript" src="js/Desk.js"></script>
+        <script type="text/javascript" src="js/Cell.js"></script>
+        <script type="text/javascript" src="js/Snake.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/ajax.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                newGame();
+            }
+        </script>
+    </head>
+    <body onkeydown="setDirection(event);">
+        <div id="deskID"></div>
+        <div id="commandPanel">
+            <span title="horizontal number of cells">Width:</span>
+            <select size="1" name="deskWidth" id="deskWidth" title="horizontal number of cells">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10" selected>10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+            </select>
+            <span title="vertical number of cells">Height:</span>
+            <select size="1" name="deskHeight" id="deskHeight" title="vertical number of cells">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10" selected>10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+            </select>
+            <br/>Speed:
+            <select size="1" name="level" id="level">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            not to intersect itself: <input type="checkbox" name="intersect" id="intersect" checked/>
+            <br/>
+            <button onclick="newGame()">New game</button>
+            <button onclick="start()">Start</button>
+            <button onclick="pause()">Pause</button>
+        </div>
+    </body>
+</html>
+
